@@ -42,8 +42,8 @@
     </div>
     <div class="two">
       <form id="contact-form" novalidate>
-        <div><label for="cf-name">Name</label><input id="cf-name" name="name" autocomplete="name" required value="Jordan Ellis"></div>
-        <div><label for="cf-email">Email</label><input id="cf-email" name="email" type="email" autocomplete="email" required value="jordan@example.com"></div>
+        <div><label for="cf-name">Name <span class="hint">(required)</span></label><input id="cf-name" name="name" autocomplete="name" required aria-required="true" value="Jordan Ellis"></div>
+        <div><label for="cf-email">Email <span class="hint">(required)</span></label><input id="cf-email" name="email" type="email" autocomplete="email" required aria-required="true" value="jordan@example.com"></div>
         <div><label for="cf-phone">Phone <span class="hint">(optional)</span></label><input id="cf-phone" name="phone" type="tel" autocomplete="tel"></div>
         <fieldset>
           <legend>Interested in</legend>
@@ -65,7 +65,7 @@
           <p id="cf-msg-hint" class="hint" style="margin-top:6px">Please don't include health details here. We'll talk about those privately on the call.</p>
         </div>
         <div><button class="btn" type="submit">Send request</button></div>
-        <p id="cf-status" class="status" role="status" hidden></p>
+        <p id="cf-status" class="status" role="status" aria-live="polite"></p>
       </form>
       <div class="stack">
         <h2 style="font-size:28px">Office</h2>

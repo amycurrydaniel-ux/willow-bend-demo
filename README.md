@@ -28,6 +28,10 @@ Connect this repository to Netlify or Cloudflare Pages. No build command is need
 - Contact form: connect to the practice's HIPAA-appropriate contact or booking form (for example, from its practice-management system), or a form service that will sign a BAA
 - Add a real headshot to the About page
 
+## Accessibility
+
+See `ACCESSIBILITY.md` for the WCAG 2.2 AA standard this site is built to and the pre-launch checklist.
+
 ## Making changes
 
 Ask Claude with this repository attached, for example: "Update the self-pay individual rate to $160 and add Humana to the insurance list." Claude edits the files and saves the change here; the host republishes the site.

@@ -5,6 +5,8 @@
   --ink: #2e2529;
   --muted: #6b5d63;
   --line: #ddd2c8;
+  --field: #857379;
+  --error: #b3261e;
   --accent: #7d5a6b;
   --accent-ink: #ffffff;
   --soft: #e9dde0;
@@ -16,13 +18,13 @@
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #1c1719; --surface: #261f22; --ink: #efe6e9; --muted: #b9a9b0; --line: #3a3035;
+    --bg: #1c1719; --surface: #261f22; --ink: #efe6e9; --muted: #b9a9b0; --line: #3a3035; --field: #8a7a81; --error: #f2a49c;
     --accent: #d4a9bc; --accent-ink: #1c1317; --soft: #33272c; --sun: #d9b08a;
     --notice: #2b2420; --notice-line: #5b4a3b; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #1c1719; --surface: #261f22; --ink: #efe6e9; --muted: #b9a9b0; --line: #3a3035;
+  --bg: #1c1719; --surface: #261f22; --ink: #efe6e9; --muted: #b9a9b0; --line: #3a3035; --field: #8a7a81; --error: #f2a49c;
   --accent: #d4a9bc; --accent-ink: #1c1317; --soft: #33272c; --sun: #d9b08a;
   --notice: #2b2420; --notice-line: #5b4a3b; color-scheme: dark;
 }
@@ -103,7 +105,7 @@ td.num { white-space: nowrap; }
 form { display: flex; flex-direction: column; gap: 18px; }
 label { font-weight: 600; font-size: 15px; display: block; margin-bottom: 6px; }
 .hint { font-weight: 400; color: var(--muted); font-size: 14px; }
-input, select, textarea { width: 100%; font: inherit; font-size: 16px; padding: 11px 13px; border: 1.5px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink); }
+input, select, textarea { width: 100%; font: inherit; font-size: 16px; padding: 11px 13px; border: 1.5px solid var(--field); border-radius: 8px; background: var(--surface); color: var(--ink); }
 input:focus, select:focus, textarea:focus { border-color: var(--accent); outline: 2px solid var(--accent); outline-offset: 0; }
 fieldset { border: 0; padding: 0; margin: 0; }
 legend { font-weight: 600; font-size: 15px; margin-bottom: 6px; }
@@ -128,3 +130,8 @@ footer .wrap { padding-block: 28px; display: flex; flex-wrap: wrap; justify-cont
   main { animation: rise .35s ease-out; }
   @keyframes rise { from { transform: translateY(6px); } to { transform: none; } }
 }
+
+.card h2.card-title { font-size: 24px; }
+input[aria-invalid="true"] { border-color: var(--error); border-width: 2px; }
+.status.error { background: var(--notice); border: 1px solid var(--notice-line); }
+.status:empty { display: none; }
