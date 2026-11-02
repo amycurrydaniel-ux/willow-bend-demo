@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Willow Bend Counseling</title>
+<meta name="description" content="Request a free 15-minute consultation with Willow Bend Counseling in Decatur, GA.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Public+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+
+<div class="crisis" role="note">
+  <div class="wrap">In crisis or thinking about suicide? Call or text <strong>988</strong> (Suicide &amp; Crisis Lifeline), or call 911. This practice does not provide emergency services.</div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><b>Willow Bend Counseling</b><span>Dana Whitfield, LPC · Decatur, GA</span></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="insurance-fees.html">Insurance &amp; Fees</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap" tabindex="-1">
+
+    <div class="page-head stack">
+      <p class="eyebrow">Contact</p>
+      <h1>Request a consultation</h1>
+      <p class="lede">I reply within one business day.</p>
+    </div>
+    <div class="two">
+      <form id="contact-form" novalidate>
+        <div><label for="cf-name">Name</label><input id="cf-name" name="name" autocomplete="name" required value="Jordan Ellis"></div>
+        <div><label for="cf-email">Email</label><input id="cf-email" name="email" type="email" autocomplete="email" required value="jordan@example.com"></div>
+        <div><label for="cf-phone">Phone <span class="hint">(optional)</span></label><input id="cf-phone" name="phone" type="tel" autocomplete="tel"></div>
+        <fieldset>
+          <legend>Interested in</legend>
+          <div class="radios">
+            <label><input type="radio" id="cf-ind" name="type" value="individual" checked> Individual</label>
+            <label><input type="radio" id="cf-cou" name="type" value="couples"> Couples</label>
+            <label><input type="radio" id="cf-unsure" name="type" value="unsure"> Not sure yet</label>
+          </div>
+        </fieldset>
+        <div>
+          <label for="cf-ins">Insurance</label>
+          <select id="cf-ins" name="insurance">
+            <option>Aetna</option><option>BCBS of Georgia</option><option>Cigna</option><option>UnitedHealthcare / Optum</option><option>Other / self-pay</option>
+          </select>
+        </div>
+        <div>
+          <label for="cf-msg">Best times to reach you</label>
+          <textarea id="cf-msg" name="message" rows="3" aria-describedby="cf-msg-hint">Weekday afternoons after 3pm</textarea>
+          <p id="cf-msg-hint" class="hint" style="margin-top:6px">Please don't include health details here. We'll talk about those privately on the call.</p>
+        </div>
+        <div><button class="btn" type="submit">Send request</button></div>
+        <p id="cf-status" class="status" role="status" hidden></p>
+      </form>
+      <div class="stack">
+        <h2 style="font-size:28px">Office</h2>
+        <p>315 West Ponce de Leon Ave, Suite 200<br>Decatur, GA 30030</p>
+        <p>Phone: (404) 555-0142<br>Email: hello@willowbendcounseling.example</p>
+        <p>Street parking and a paid deck are across the street. The building has an elevator and accessible restrooms.</p>
+        <p class="sample">Sample site: address, phone, and email are placeholders.</p>
+      </div>
+    </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Willow Bend Counseling, LLC</span>
+    <span>Dana Whitfield, LPC · Georgia License #LPC000000</span>
+  </div>
+</footer>
+<script src="contact.js"></script>
+</body>
+</html>
